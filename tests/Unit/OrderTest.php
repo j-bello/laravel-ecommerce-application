@@ -5,9 +5,12 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 use App\Models\Order;
+use Illuminate\Foundation\Testing\WithFaker;
 
 class OrderTest extends TestCase
 {
+    use WithFaker;
+
     /**
      * A basic unit test example.
      *
@@ -20,7 +23,7 @@ class OrderTest extends TestCase
     public function it_can_create_an_order()
     {
         $data = [
-            'order_number' => 'ORD-00121111111111',
+            'order_number' => $this->faker->unique()->randomNumber(7),
             'user_id' => 2,
             'status' => 'pending',
             'grand_total' => 100.00,
@@ -56,10 +59,6 @@ class OrderTest extends TestCase
         $this->assertEquals($data['phone_number'], $order->phone_number);
         $this->assertEquals($data['notes'], $order->notes);
     }
-
-
-
-
 
 
 

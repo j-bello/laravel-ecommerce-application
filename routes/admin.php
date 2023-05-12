@@ -61,6 +61,7 @@ Route::group(['prefix'  =>  'admin'], function () {
            Route::post('/store', [App\Http\Controllers\Admin\ProductController::class,'store'])->name('admin.products.store');
            Route::get('/edit/{id}', [App\Http\Controllers\Admin\ProductController::class,'edit'])->name('admin.products.edit');
            Route::post('/update', [App\Http\Controllers\Admin\ProductController::class,'update'])->name('admin.products.update');
+           Route::get('/{id}/delete', [App\Http\Controllers\Admin\ProductController::class,'delete'])->name('admin.products.delete');
 
            Route::post('images/upload', [App\Http\Controllers\Admin\ProductImageController::class,'upload'])->name('admin.products.images.upload');
            Route::get('images/{id}/delete', [App\Http\Controllers\Admin\ProductImageController::class,'delete'])->name('admin.products.images.delete');

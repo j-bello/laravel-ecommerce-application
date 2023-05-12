@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+use App\Models\Category;
 
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;

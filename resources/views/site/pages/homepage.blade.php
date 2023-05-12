@@ -6,10 +6,10 @@
         <div class="w-full sm:w-6/6 bg-b-400 text-center text-gray-700">
             <div class="py-3">
                 <div class="mx-auto">
-                    <div class="bg-white px-5 text-black overflow-hidden shadow-xl sm:rounded-lg">
+                    <div class="bg-light px-5 text-black overflow-hidden shadow-xl sm:rounded-lg">
                         <br>
                         <div class="m-9">
-                        <h1 style="font-family:	Goudy Old Style">Welcome to Polin's Store</h1>
+                        <h1 style="font-family:Nunito">Welcome to Polin's Store</h1>
                         <h3 style="font-family:Brush Script MT">Smartphones</h3><br>
                             </div>
                         <div class=" pb-26">
@@ -25,19 +25,19 @@
                                 </ol>
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
-                                    <img src="/images/image1.png" class="d-inline w-80 h-64" alt="...">
+                                    <img src="/images/image1.png" class="d-inline w-80 h-50" alt="...">
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="/images/image2.png" class="d-inline w-80  h-64" alt="...">
+                                    <img src="/images/image2.png" class="d-inline w-80  h-50" alt="...">
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="/images/image3.png" class="d-inline w-80  h-64" alt="...">
+                                    <img src="/images/image3.png" class="d-inline w-80  h-50" alt="...">
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="/images/image4.png" class="d-inline w-80  h-64" alt="...">
+                                    <img src="/images/image4.png" class="d-inline w-80  h-50" alt="...">
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="/images/image5.png" class="d-inline w-80  h-64" alt="...">
+                                    <img src="/images/image5.png" class="d-inline w-80  h-50" alt="...">
                                   </div>
                                 </div>
 
