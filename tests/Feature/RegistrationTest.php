@@ -18,6 +18,7 @@ class RegistrationTest extends TestCase
      *
      * @return void
      */
+     /** @test */
     public function testUserRegistration()
     {
         $userData = [
@@ -48,6 +49,8 @@ class RegistrationTest extends TestCase
      *
      * @return void
      */
+
+      /** @test */
     public function testUserRegistrationValidation()
     {
         $response = $this->post(route('register'), []);

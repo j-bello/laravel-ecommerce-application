@@ -19,12 +19,20 @@ Route::group(['prefix'  =>  'admin'], function () {
 
         Route::group(['prefix'  =>   'categories'], function() {
 
-            Route::get('/', [App\Http\Controllers\Admin\CategoryController::class,'index'])->name('admin.categories.index');
-            Route::get('/create', [App\Http\Controllers\Admin\CategoryController::class,'create'])->name('admin.categories.create');
-            Route::post('/store', [App\Http\Controllers\Admin\CategoryController::class,'store'])->name('admin.categories.store');
-            Route::get('/{id}/edit', [App\Http\Controllers\Admin\CategoryController::class,'edit'])->name('admin.categories.edit');
-            Route::post('/update', [App\Http\Controllers\Admin\CategoryController::class,'update'])->name('admin.categories.update');
-            Route::get('/{id}/delete', [App\Http\Controllers\Admin\CategoryController::class,'delete'])->name('admin.categories.delete');
+            // Route::get('/', [App\Http\Controllers\Admin\CategoryController::class,'index'])->name('admin.categories.index');
+            // Route::get('/create', [App\Http\Controllers\Admin\CategoryController::class,'create'])->name('admin.categories.create');
+            // Route::post('/store', [App\Http\Controllers\Admin\CategoryController::class,'store'])->name('admin.categories.store');
+            // Route::get('/{id}/edit', [App\Http\Controllers\Admin\CategoryController::class,'edit'])->name('admin.categories.edit');
+            // Route::post('/update', [App\Http\Controllers\Admin\CategoryController::class,'update'])->name('admin.categories.update');
+            // Route::get('/{id}/delete', [App\Http\Controllers\Admin\CategoryController::class,'delete'])->name('admin.categories.delete');
+
+
+            Route::get('/', 'Admin\CategoryController@index')->name('admin.categories.index');
+            Route::get('/create', 'Admin\CategoryController@create')->name('admin.categories.create');
+            Route::post('/store', 'Admin\CategoryController@store')->name('admin.categories.store');
+            Route::get('/{id}/edit', 'Admin\CategoryController@edit')->name('admin.categories.edit');
+            Route::post('/update', 'Admin\CategoryController@update')->name('admin.categories.update');
+            Route::get('/{id}/delete', 'Admin\CategoryController@delete')->name('admin.categories.delete');
 
         });
 
